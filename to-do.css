@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:rgba(0, 0, 0, 0.815);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:450px;
+    background:white;
+    border-radius:18px;
+    border:4px solid #e6772dfa;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.heading{
+    width:100%;
+    height:70px;
+
+    background-color:#ff7a00;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+    font-weight:700;
+
+    border-radius:18px 18px 0 0;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+#task{
+    flex:1;
+    padding:12px;
+    font-size:16px;
+    border:2px solid #ffb067;
+    border-radius:8px;
+    outline:none;
+}
+
+#task:focus{
+    border-color:#ff7a00;
+}
+
+#task_btn,
+#delt_Task{
+    text-decoration:solid;
+    font-weight:bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ff8200;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+#task_btn{
+    padding:12px 18px;
+}
+
+#delt_Task{
+    width:100%;
+    padding:13px;
+    margin-top:20px;
+}
+
+#task_btn:hover,
+#delt_Task:hover{
+    background:#e56800;
+}
+
+#head{
+    display:none;
+
+    background:#ff7a00;
+    color:white;
+
+    padding:12px;
+    border-radius:8px;
+
+    font-weight:bold;
+    text-align:center;
+
+    margin-bottom:15px;
+}
+
+#taskList{
+    background:#fffaf5;
+border:2px solid #ffe0c2;
+background:white;
+padding:12px;
+border-radius:10px;
+margin-bottom:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.08);
+    min-height:180px;
+   
+}
+
+.task{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px;
+    margin-bottom:10px;
+
+    border-radius:8px;
+
+    background:#fff8f2;
+}
+
+.task input[type="checkbox"]{
+    width:18px;
+    height:18px;
+}
+
+.task label{
+    font-size:16px;
+}
